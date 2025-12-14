@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="dist/output.css" rel="stylesheet">
+    <title>Tienda de Mentira - API</title>
+</head>
+
+<body class="bg-yellow-50">
+
+    <main class="min-h-screen flex flex-col items-center py-8 px-4">
+
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-indigo-700 border-4 border-indigo-500 px-4 py-2 inline-block rounded">
+                Tienda de Mentira - API
+            </h1>
+            <p class="mt-3 text-gray-600 max-w-xl mx-auto">
+                Seleccioná un item para cargar y ordenar los productos obtenidos desde una API externa.
+            </p>
+        </header>
+
+        <nav class="w-full max-w-4xl mb-10">
+            <ul class="flex flex-wrap justify-center gap-4 uppercase font-semibold text-sm">
+
+                <li id="all"
+                    class="px-4 py-2 bg-white rounded shadow cursor-pointer hover:bg-orange-200 transition">
+                   <p>Todos los productos</p>
+                </li>
+
+                <li id="menor-precio"
+                    class="px-4 py-2 bg-white rounded shadow cursor-pointer hover:bg-orange-200 transition">
+                    <p>Menor Precio</p>
+                </li>
+
+                <li id="mayor-precio"
+                    class="px-4 py-2 bg-white rounded shadow cursor-pointer hover:bg-orange-200 transition">
+                    <p>Mayor Precio</p>
+                </li>
+
+                <li id="rating"
+                    class="px-4 py-2 bg-white rounded shadow cursor-pointer hover:bg-orange-200 transition">
+                    <p>Mejor puntuación</p>
+                </li>
+
+            </ul>
+        </nav>
+
+        <p id="mensaje-inicial" class="text-gray-500 mb-8 text-center">
+            ¡¡Seleccioná un filtro para mostrar los productos!!
+        </p>
+        <section
+            id="products-container"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
+        </section>
+    </main>
+
+    <footer class="text-center py-2">Hecho por Juan Ignacio Castelli</footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html> 

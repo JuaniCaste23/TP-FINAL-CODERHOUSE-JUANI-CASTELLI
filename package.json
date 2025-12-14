@@ -1,0 +1,15 @@
+{
+  "name": "fake-store-api",
+  "version": "1.0.0",
+  "description": "e-commerce",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:tailwind":"npx tailwindcss -i ./src/css/style.css -o ./dist/output.css --watch"
+  },
+  "author": "Juani_Castelli",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
