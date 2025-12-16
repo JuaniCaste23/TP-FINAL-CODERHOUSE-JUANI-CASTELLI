@@ -1,6 +1,4 @@
-//main y variables
-
-window.addEventListener('load', async () => {
+window.addEventListener('load', async () => { //Main de la app y variables
 
     const url = 'https://fakestoreapi.com/products';
 
@@ -41,7 +39,7 @@ window.addEventListener('load', async () => {
 });
 
 
-class ProductService {
+class ProductService { //Maneja los datos de la API
     constructor(url) {
         this.url = url;
         this.products = [];
@@ -53,7 +51,7 @@ class ProductService {
             const response = await fetch(this.url);
             const data = await response.json();
             this.products = [...data];
-            this.originalProducts = [...data]; // copia original
+            this.originalProducts = [...data]; // copia json original
         } catch (error) {
             console.warn(error);
         }
@@ -77,7 +75,7 @@ class ProductService {
 }
 
 
-class ProductUI {
+class ProductUI { //Muestra los datos de la API en el HTML
     constructor(container) {
         this.container = container;
     }
